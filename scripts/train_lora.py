@@ -9,7 +9,7 @@ with open("config/model_config.json") as f:
     model_config = json.load(f)
 
 model_name = model_config.get("base_model", "TinyLlama/TinyLlama-1.1B-Chat-v1.0")
-output_dir = model_config.get("output_dir", "models/karen-lora")
+output_dir = model_config.get("output_dir", "models/karen-lora-testV1")
 
 print("[*] Loading base model:", model_name)
 tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -35,7 +35,7 @@ model = get_peft_model(model, lora_config)
 
 # Load dataset
 print("[*] Loading processed dataset...")
-dataset = load_from_disk("data/processed") # old data/processed
+dataset = load_from_disk("data/processed/combined_final") # old data/processed
 train_data = dataset
 
 # Training args

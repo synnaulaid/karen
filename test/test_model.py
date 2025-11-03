@@ -9,8 +9,8 @@ base_model = AutoModelForCausalLM.from_pretrained(base_model_name)
 
 model = PeftModel.from_pretrained(base_model, lora_model_path)
 
-prompt = "Halo, siapa kamu?"
+prompt = "apakah kamu karen?"
 inputs = tokenizer(prompt, return_tensors="pt")
 
-outputs = model.generate(**inputs, max_new_tokens=50)
+outputs = model.generate(**inputs, max_new_tokens=100)
 print(tokenizer.decode(outputs[0], skip_special_tokens=True))
