@@ -1,0 +1,7 @@
+{
+  "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "max_length": 512,
+  "padding": "max_length",
+  "truncation": true,
+  "output_dir": "models/karen-lora"
+}
