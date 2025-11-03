@@ -9,6 +9,13 @@ Roadmap:
 
 Test Mode: `python3 test/test_model.py`
 
+if no support
+
+```
+pip uninstall bitsandbytes peft
+pip install peft==0.4.0
+
+```
 
 Dataset ref: `https://huggingface.co/datasets/anon8231489123/ShareGPT_Vicuna_unfiltered/raw/main/ShareGPT_V3_unfiltered_cleaned_split_no_imsorry.json`
 download copy to dataset/
