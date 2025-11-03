@@ -35,7 +35,7 @@ model = get_peft_model(model, lora_config)
 
 # Load dataset
 print("[*] Loading processed dataset...")
-dataset = load_from_disk("data/processed")
+dataset = load_from_disk("data/processed/combined_dataset") # old data/processed
 train_data = dataset
 
 # Training args
