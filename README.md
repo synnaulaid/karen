@@ -5,7 +5,9 @@
 Roadmap:
 
 - Load dataset 1B (initial dataset)
-- Train-Model
+- Train-Model (v1)
+
+Test Mode: `python3 test/test_model.py`
 
 
 Dataset ref: `https://huggingface.co/datasets/anon8231489123/ShareGPT_Vicuna_unfiltered/raw/main/ShareGPT_V3_unfiltered_cleaned_split_no_imsorry.json`
